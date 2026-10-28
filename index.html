@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>AgroCanary | Fruta, verdura y producto local de fincas en Tenerife</title>
+    <meta
+      name="description"
+      content="Solicita cajas de fruta, verdura y producto canario de temporada en Tenerife. Reservas bajo disponibilidad real de fincas y productores locales."
+    />
+    <meta
+      name="keywords"
+      content="fruta Tenerife, verdura Tenerife, fincas Tenerife, producto canario, agricultores Tenerife, fruta ecologica Tenerife, reservar producto local Tenerife"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AgroCanary" />
+    <meta property="og:title" content="AgroCanary | Producto local de fincas en Tenerife" />
+    <meta
+      property="og:description"
+      content="Solicitudes de cajas de fruta, verdura y producto canario de temporada, preparadas bajo disponibilidad real de productores locales."
+    />
+    <meta property="og:image" content="assets/hero-canarias.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#143c32" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="AgroCanary" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="preload" as="image" href="assets/hero-canarias.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pwa.js" defer></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "AgroCanary",
+        "description": "Solicitudes de cajas de fruta, verdura y producto canario de temporada, directas de fincas y productores locales en Tenerife.",
+        "email": "agrocanary.canarias@gmail.com",
+        "areaServed": [
+          {
+            "@type": "AdministrativeArea",
+            "name": "Tenerife"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "Canarias"
+          }
+        ],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "name": "Caja tropical de temporada"
+          },
+          {
+            "@type": "Offer",
+            "name": "Caja desayuno canario"
+          },
+          {
+            "@type": "Offer",
+            "name": "Caja regalo canaria"
+          }
+        ],
+        "sameAs": []
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header" aria-label="Cabecera">
+      <a class="brand" href="#top" aria-label="AgroCanary inicio">
+        <img class="brand-logo" src="assets/logo.svg" alt="AgroCanary" />
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Principal">
+        <a href="#cajas">Productos</a>
+        <a href="#productores">Productores</a>
+        <a href="#agricultores">Vender</a>
+        <a href="#pedido">Solicitud</a>
+      </nav>
+      <a class="header-action cart-action" href="#pedido" aria-label="Ir a la solicitud">
+        <svg class="header-action-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16l-1.5 12h-13L4 7Z" />
+          <path d="M8 7a4 4 0 0 1 8 0" />
+        </svg>
+        <span class="header-action-label">Solicitar</span>
+        <span class="cart-badge" id="cartBadge" hidden>0</span>
+      </a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-controls="primaryNav"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Producto local canario">
+        <img
+          class="hero-image"
+          src="assets/hero-canarias.jpg"
+          alt="Mesa con fruta tropical, miel, mojo, sal y queso canario"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Piloto en Tenerife</p>
+          <h1>Producto canario real, directo de productores locales.</h1>
+          <p class="hero-copy">
+            Cajas de temporada preparadas bajo pedido. Reservas hasta el
+            miércoles, entregas y recogidas viernes o sábado.
+          </p>
+          <p class="hero-note">Piloto privado. Solicitudes sujetas a disponibilidad de cosecha.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#cajas">Ver cajas</a>
+            <a class="button secondary" href="para-productores.html">Soy productor</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="Datos del piloto">
+        <div>
+          <strong>0 stock</strong>
+          <span>Solo bajo pedido</span>
+        </div>
+        <div>
+          <strong>1 isla</strong>
+          <span>Tenerife primero</span>
+        </div>
+        <div>
+          <strong>3 cajas</strong>
+          <span>Oferta simple</span>
+        </div>
+        <div>
+          <strong>Viernes</strong>
+          <span>Ventana semanal</span>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="section-heading">
+          <p class="eyebrow">La apuesta</p>
+          <h2>Fruta, verdura y producto canario con origen claro.</h2>
+        </div>
+        <p>
+          AgroCanary empieza en Tenerife como un escaparate curado para solicitar
+          fruta, verdura, miel, gofio, queso y otros productos canarios de
+          temporada. Cada caja se prepara cuando hay pedido, con productores
+          visibles y una operacion pequena, medible y cercana.
+        </p>
+      </section>
+
+      <section class="section local-search">
+        <div class="section-heading">
+          <p class="eyebrow">Producto local</p>
+          <h2>De fincas y productores de Tenerife.</h2>
+        </div>
+        <p>
+          El piloto prioriza productos de temporada faciles de preparar y
+          entregar: aguacate, mango, papaya, platano, miel, mermeladas, gofio,
+          mojos, sal marina y queso curado autorizado. La disponibilidad se
+          confirma antes de cada entrega semanal.
+        </p>
+      </section>
+
+      <section class="section" id="cajas">
+        <div class="section-heading">
+          <p class="eyebrow">Cajas piloto</p>
+          <h2>Oferta cerrada para validar demanda, no stock en tiempo real.</h2>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+        <p class="phase-note">
+          Productos de muestra hasta incorporar fincas reales. Estas cajas
+          funcionan como solicitud de reserva: no se paga al enviar el
+          formulario; primero se confirma disponibilidad, precio final y forma de
+          entrega con la finca.
+        </p>
+      </section>
+
+      <section class="section producers" id="productores">
+        <div class="section-heading">
+          <p class="eyebrow">Productores</p>
+          <h2>Perfiles simples, confianza primero.</h2>
+        </div>
+        <div class="producer-grid" data-producer-list data-limit="3"></div>
+        <a class="section-link" href="productores.html">Ver todos los productores <span aria-hidden="true">&#8594;</span></a>
+      </section>
+
+      <section class="section farmer-cta" id="agricultores">
+        <div>
+          <p class="eyebrow">Para fincas y productores</p>
+          <h2>Prueba otro canal sin convertirte en vendedor online.</h2>
+          <p>
+            La herramienta debe adaptarse a la finca, no al reves. AgroCanary
+            ayuda a convertir producto, cosecha o finca infrautilizada en una
+            oferta clara y recibir solicitudes. La finca decide si hay stock,
+            precio final y forma de entrega antes de cerrar nada.
+          </p>
+        </div>
+        <form class="farmer-panel" id="farmerForm">
+          <ul>
+            <li>Sin cuota mensual durante el piloto.</li>
+            <li>Sin pago online obligatorio en fase 1.</li>
+            <li>Solicitudes agrupadas por ventana semanal.</li>
+            <li>La finca no tiene que aprender ecommerce ni marketing.</li>
+          </ul>
+          <label>
+            Nombre o finca
+            <input name="name" type="text" autocomplete="organization" required />
+          </label>
+          <label>
+            Email de contacto
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            Producto y zona
+            <textarea name="message" rows="4" placeholder="Ej. aguacate en La Orotava, miel en Tacoronte..." required></textarea>
+          </label>
+          <button class="button primary form-submit" type="submit">Quiero vender</button>
+          <p class="form-note" id="farmerNote" role="status"></p>
+        </form>
+      </section>
+
+      <section class="section operating-model" aria-label="Funcionamiento">
+        <div class="section-heading">
+          <p class="eyebrow">Operacion</p>
+          <h2>Una ventana semanal, sin inventario propio.</h2>
+        </div>
+        <div class="steps">
+          <div>
+            <span>1</span>
+            <h3>Solicitud</h3>
+            <p>El cliente elige caja y deja sus datos antes del miercoles.</p>
+          </div>
+          <div>
+            <span>2</span>
+            <h3>Confirmacion</h3>
+            <p>La finca confirma disponibilidad, precio final y entrega.</p>
+          </div>
+          <div>
+            <span>3</span>
+            <h3>Pago y entrega</h3>
+            <p>El cliente paga solo cuando todo esta confirmado.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section order-section" id="pedido">
+        <div class="order-copy">
+          <p class="eyebrow">Pedido manual</p>
+          <h2>Reserva una caja para la proxima entrega.</h2>
+          <p>
+            Este MVP no intenta automatizarlo todo. El pedido se revisa a mano
+            y se confirma por email antes de cualquier pago.
+          </p>
+        </div>
+
+        <form class="order-form" id="orderForm">
+          <div class="cart-panel" id="cartPanel">
+            <div class="cart-head">
+              <h3>Tu seleccion</h3>
+              <button class="icon-button" type="button" id="clearCart" aria-label="Vaciar carrito">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 6h18" />
+                  <path d="M8 6V4h8v2" />
+                  <path d="M6 6l1 15h10l1-15" />
+                  <path d="M10 11v6" />
+                  <path d="M14 11v6" />
+                </svg>
+              </button>
+            </div>
+            <div id="cartItems" class="cart-items" aria-live="polite" aria-relevant="additions text"></div>
+            <div class="cart-total">
+              <span>Total orientativo</span>
+              <strong id="cartTotal">0 EUR</strong>
+            </div>
+          </div>
+
+          <fieldset>
+            <legend>Contacto</legend>
+            <div class="form-grid two">
+              <label>
+                Nombre y apellidos
+                <input name="name" type="text" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input name="email" type="email" autocomplete="email" required />
+              </label>
+              <label>
+                Telefono
+                <input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="Ej. 600 123 123" required />
+              </label>
+              <label>
+                Preferencia de contacto
+                <div class="custom-select" data-custom-select>
+                  <input type="hidden" name="contactPreference" value="Email" />
+                  <button class="select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <span>Email</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="select-menu" role="listbox">
+                    <button type="button" role="option" data-value="Email" aria-selected="true">Email</button>
+                    <button type="button" role="option" data-value="Telefono">Telefono</button>
+                  </div>
+                </div>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Entrega</legend>
+            <label>
+              Metodo
+              <div class="custom-select" data-custom-select>
+                <input type="hidden" name="deliveryMethod" value="Entrega a domicilio" />
+                <button class="select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                  <span>Entrega a domicilio</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m6 9 6 6 6-6" />
+                  </svg>
+                </button>
+                <div class="select-menu" role="listbox">
+                  <button type="button" role="option" data-value="Entrega a domicilio" aria-selected="true">Entrega a domicilio</button>
+                  <button type="button" role="option" data-value="Recogida en punto acordado">Recogida en punto acordado</button>
+                </div>
+              </div>
+            </label>
+            <div class="form-grid two delivery-fields">
+              <label>
+                Calle y numero
+                <input name="street" type="text" autocomplete="address-line1" placeholder="Solo si es entrega a domicilio" />
+              </label>
+              <label>
+                Piso, puerta, bloque
+                <input name="addressExtra" type="text" autocomplete="address-line2" placeholder="Ej. 2B, portal 3" />
+              </label>
+              <label>
+                Codigo postal
+                <input name="postalCode" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="Solo si es entrega a domicilio" />
+              </label>
+              <label>
+                Municipio
+                <input name="city" type="text" autocomplete="address-level2" placeholder="Ej. La Laguna" required />
+              </label>
+              <label>
+                Isla
+                <div class="custom-select" data-custom-select>
+                  <input type="hidden" name="island" value="Tenerife" />
+                  <button class="select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <span>Tenerife</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="select-menu" role="listbox">
+                    <button type="button" role="option" data-value="Tenerife" aria-selected="true">Tenerife</button>
+                    <button type="button" role="option" data-value="Gran Canaria">Gran Canaria</button>
+                    <button type="button" role="option" data-value="La Palma">La Palma</button>
+                    <button type="button" role="option" data-value="Lanzarote">Lanzarote</button>
+                    <button type="button" role="option" data-value="Fuerteventura">Fuerteventura</button>
+                    <button type="button" role="option" data-value="La Gomera">La Gomera</button>
+                    <button type="button" role="option" data-value="El Hierro">El Hierro</button>
+                  </div>
+                </div>
+              </label>
+              <label>
+                Franja preferida
+                <div class="custom-select" data-custom-select>
+                  <input type="hidden" name="deliveryWindow" value="Viernes tarde" />
+                  <button class="select-trigger" type="button" aria-haspopup="listbox" aria-expanded="false">
+                    <span>Viernes tarde</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="m6 9 6 6 6-6" />
+                    </svg>
+                  </button>
+                  <div class="select-menu" role="listbox">
+                    <button type="button" role="option" data-value="Viernes tarde" aria-selected="true">Viernes tarde</button>
+                    <button type="button" role="option" data-value="Sabado manana">Sabado manana</button>
+                    <button type="button" role="option" data-value="Sabado tarde">Sabado tarde</button>
+                    <button type="button" role="option" data-value="A confirmar">A confirmar</button>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <label>
+              Enlace de Google Maps opcional
+              <input name="mapsLink" type="url" placeholder="Pega aqui el enlace si quieres evitar errores de direccion" />
+            </label>
+            <label>
+              Indicaciones para entrega
+              <textarea name="deliveryNotes" rows="3" placeholder="Ej. llamar al llegar, dejar en recepcion, entrada por calle lateral"></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Facturacion</legend>
+            <label class="check-row">
+              <input name="needsInvoice" id="needsInvoice" type="checkbox" />
+              Necesito factura
+            </label>
+            <div class="billing-fields" id="billingFields" hidden>
+              <div class="form-grid two">
+                <label>
+                Nombre fiscal o empresa
+                  <input name="billingName" type="text" autocomplete="organization" />
+                </label>
+                <label>
+                  NIF/CIF
+                  <input name="taxId" type="text" />
+                </label>
+              </div>
+              <label>
+                Direccion de facturacion
+                <input name="billingAddress" type="text" autocomplete="billing street-address" />
+              </label>
+            </div>
+          </fieldset>
+
+          <label>
+            Notas del pedido
+            <textarea name="notes" rows="4" placeholder="Preferencias, alergias, sustituciones aceptadas o dudas"></textarea>
+          </label>
+          <button class="button primary form-submit" type="submit">Enviar solicitud</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <aside class="mobile-cart-bar" id="mobileCartBar" hidden aria-label="Resumen del carrito">
+      <div>
+        <strong id="mobileCartCount">0 unidades</strong>
+        <span id="mobileCartTotal">0 EUR</span>
+      </div>
+      <a class="button primary" href="#pedido">Ver pedido</a>
+    </aside>
+
+    <footer class="footer">
+      <p>AgroCanary - Piloto privado de validacion.</p>
+      <nav aria-label="Legal">
+        <a href="para-productores.html">Para productores</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="condiciones.html">Condiciones</a>
+        <a href="mailto:agrocanary.canarias@gmail.com">agrocanary.canarias@gmail.com</a>
+      </nav>
+    </footer>
+
+    <script src="productores-data.js"></script>
+    <script src="productores.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

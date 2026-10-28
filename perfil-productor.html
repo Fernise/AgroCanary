@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Perfil de productor | AgroCanary</title>
+    <meta name="description" content="Perfil de finca o productor local en AgroCanary." />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#143c32" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pwa.js" defer></script>
+    <script src="productores-data.js" defer></script>
+    <script src="productores.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header is-solid" aria-label="Cabecera">
+      <a class="brand" href="index.html" aria-label="AgroCanary inicio">
+        <img class="brand-logo" src="assets/logo.svg" alt="AgroCanary" />
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Principal">
+        <a href="index.html#cajas">Productos</a>
+        <a href="productores.html">Productores</a>
+        <a href="para-productores.html">Vender</a>
+        <a href="index.html#pedido">Solicitud</a>
+      </nav>
+      <a class="header-action" href="productores.html">Ver productores</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primaryNav" aria-expanded="false" data-nav-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+    </header>
+
+    <main class="producer-profile-page" data-producer-profile></main>
+
+    <footer class="footer">
+      <p>AgroCanary - Piloto privado de validacion.</p>
+      <nav aria-label="Legal">
+        <a href="productores.html">Productores</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="condiciones.html">Condiciones</a>
+        <a href="mailto:agrocanary.canarias@gmail.com">agrocanary.canarias@gmail.com</a>
+      </nav>
+    </footer>
+  </body>
+</html>

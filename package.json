@@ -1,0 +1,13 @@
+{
+  "name": "agrocanary",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A direct-producer marketplace pilot for the Canary Islands",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check script.js && node --check productores.js && node --check productores-data.js && node --check pwa.js && node --check service-worker.js && node --check api/contact.js"
+  }
+}

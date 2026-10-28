@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Productores locales de Tenerife | AgroCanary</title>
+    <meta
+      name="description"
+      content="Conoce las fincas y productores locales que ofrecen sus productos en AgroCanary, con origen, disponibilidad y entrega explicados con claridad."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#143c32" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="pwa.js" defer></script>
+    <script src="productores-data.js" defer></script>
+    <script src="productores.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header is-solid" aria-label="Cabecera">
+      <a class="brand" href="index.html" aria-label="AgroCanary inicio">
+        <img class="brand-logo" src="assets/logo.svg" alt="AgroCanary" />
+      </a>
+      <nav class="nav" id="primaryNav" aria-label="Principal">
+        <a href="index.html#cajas">Productos</a>
+        <a href="productores.html" aria-current="page">Productores</a>
+        <a href="para-productores.html">Vender</a>
+        <a href="index.html#pedido">Solicitud</a>
+      </nav>
+      <a class="header-action" href="index.html#cajas">Ver productos</a>
+      <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-controls="primaryNav" aria-expanded="false" data-nav-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+      </button>
+    </header>
+
+    <main class="producer-directory">
+      <section class="directory-intro">
+        <div>
+          <p class="eyebrow">Productores de Tenerife</p>
+          <h1>Conoce quien prepara cada producto.</h1>
+        </div>
+        <p>
+          Cada perfil explica el origen, la oferta y las condiciones de entrega.
+          AgroCanary publica una finca solo cuando cuenta con su permiso y ha
+          revisado la informacion con ella.
+        </p>
+      </section>
+
+      <section class="section directory-list" aria-labelledby="directory-title">
+        <div class="section-heading">
+          <p class="eyebrow">Directorio</p>
+          <h2 id="directory-title">Fincas y productores publicados.</h2>
+        </div>
+        <div class="producer-grid" data-producer-list></div>
+        <p class="directory-note">
+          Estamos incorporando las primeras fincas del piloto. Los perfiles de
+          demostracion estan identificados y no representan productores reales.
+        </p>
+      </section>
+
+      <section class="producer-directory-cta">
+        <div>
+          <p class="eyebrow">Para productores</p>
+          <h2>Su finca puede tener una ficha preparada por AgroCanary.</h2>
+          <p>Ustedes aportan la informacion y el permiso. Nosotros preparamos y mantenemos el perfil durante el piloto.</p>
+        </div>
+        <a class="button primary" href="para-productores.html">Como participar</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>AgroCanary - Piloto privado de validacion.</p>
+      <nav aria-label="Legal">
+        <a href="para-productores.html">Para productores</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="condiciones.html">Condiciones</a>
+        <a href="mailto:agrocanary.canarias@gmail.com">agrocanary.canarias@gmail.com</a>
+      </nav>
+    </footer>
+  </body>
+</html>
