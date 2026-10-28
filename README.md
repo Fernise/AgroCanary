@@ -6,6 +6,12 @@
 
 A static, installable marketplace pilot for Canary Islands produce, with producer profiles and manual order enquiries.
 
+## Preview
+
+![Local AgroCanary interface](docs/assets/preview.png)
+
+Captured from a local source-only preview without real accounts or private records.
+
 [![CI](https://github.com/Fernise/AgroCanary/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/AgroCanary/actions/workflows/ci.yml)
 
 **Technology:** HTML · CSS · JavaScript · PWA · Vercel
@@ -21,15 +27,20 @@ For Canary Islands growers and buyers exploring direct produce enquiries.
 - Mobile-friendly browsing, an installable PWA and offline caching.
 - Email-based enquiry flows, with an optional server-side Resend adapter.
 
+## Screenshots
+
+<details>
+<summary>Mobile view</summary>
+
+<img src="docs/assets/mobile-preview.png" width="390" alt="AgroCanary on a mobile screen" />
+
+The local landing page; no order or enquiry was submitted.
+
+</details>
+
 ## Project status
 
 Demand-validation MVP. Availability, order confirmation and fulfilment are manual; the project does not hold stock, process payments or promise realtime inventory.
-
-## Preview
-
-![Local AgroCanary interface](docs/assets/preview.png)
-
-Captured from a local source-only preview without real accounts or private records.
 
 ## Quick start
 
