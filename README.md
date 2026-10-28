@@ -1,4 +1,6 @@
-![AgroCanary — Direct connections between Canary Islands growers and local buyers.](docs/assets/banner.svg)
+<p align="center">
+  <img src="docs/assets/project-logo.svg" width="310" alt="AgroCanary project logo" />
+</p>
 
 # AgroCanary
 
@@ -6,12 +8,17 @@ Direct connections between Canary Islands growers and local buyers.
 
 [![CI](https://github.com/Fernise/AgroCanary/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/AgroCanary/actions/workflows/ci.yml)
 [![License: reserved](https://img.shields.io/badge/license-All_rights_reserved-52646b)](LICENSE)
+[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
 
 A static, installable marketplace pilot for Canary Islands produce, with producer profiles and manual order enquiries.
 
 **Technology:** HTML · CSS · JavaScript · PWA · Vercel
 
+[Overview](#what-it-does) · [Quick start](#quick-start) · [Architecture](docs/ARCHITECTURE.md) · [Verification](docs/VERIFICATION.md)
+
 ## What it does
+
+For Canary Islands growers and buyers exploring direct produce enquiries.
 
 - Producer directory and individual farm profiles.
 - A dedicated grower onboarding page and pilot information.
@@ -69,6 +76,12 @@ Tests exercise the preview server's boundary around credentials, hidden files an
 - [Security policy](SECURITY.md)
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
+
+## Development approach
+
+Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
+
+See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
 
 ## License
 
