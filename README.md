@@ -1,16 +1,12 @@
 <p align="center">
-  <img src="docs/assets/project-logo.svg" width="310" alt="AgroCanary project logo" />
+  <img src="docs/assets/project-logo.svg" width="220" alt="AgroCanary project logo" />
 </p>
 
 # AgroCanary
 
-Direct connections between Canary Islands growers and local buyers.
+A static, installable marketplace pilot for Canary Islands produce, with producer profiles and manual order enquiries.
 
 [![CI](https://github.com/Fernise/AgroCanary/actions/workflows/ci.yml/badge.svg)](https://github.com/Fernise/AgroCanary/actions/workflows/ci.yml)
-[![License: reserved](https://img.shields.io/badge/license-All_rights_reserved-52646b)](LICENSE)
-[![Built with Codex](https://img.shields.io/badge/Built_with-Codex-5B5BD6)](#development-approach)
-
-A static, installable marketplace pilot for Canary Islands produce, with producer profiles and manual order enquiries.
 
 **Technology:** HTML · CSS · JavaScript · PWA · Vercel
 
@@ -77,14 +73,8 @@ Tests exercise the preview server's boundary around credentials, hidden files an
 - [Contribution guidance](CONTRIBUTING.md)
 - [Third-party notices](THIRD_PARTY_NOTICES.md)
 
-## Development approach
-
-Created and directed by **[Fernando · @Fernise](https://github.com/Fernise)** using agentic programming with **OpenAI Codex**. Product direction, requirements and final decisions are the author’s; coding agents contributed to implementation, refactoring, documentation and testing.
-
-See the [verification record](docs/VERIFICATION.md) for completed checks and known limitations.
-
 ## License
 
-Publicly viewable source; **all rights reserved**. No open-source reuse license is granted. See [LICENSE](LICENSE).
+All rights reserved. See [LICENSE](LICENSE).
 
 Third-party libraries and assets retain their own licenses.
